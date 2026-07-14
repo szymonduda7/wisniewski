@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiśniewski Dachy, Dekarz Poznań | Papa termozgrzewalna, dachy płaskie</title>
+  <meta name="description" content="Wiśniewski Dachy, Paweł Wiśniewski, dekarz z Poznania. 13 lat doświadczenia, hydroizolacja dachów płaskich, papa termozgrzewalna, obróbki blacharskie. 5,0 ★ w Google. Zadzwoń: 537 639 206." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap&subset=latin,latin-ext" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#17120F',
+            red: '#D0201B',
+            'red-deep': '#A81410',
+            gold: '#E0A02A',
+            white: '#FFFFFF',
+            cloud: '#F5F2EC',
+            line: '#E7E2DA',
+            muted: '#6B6560',
+          },
+          fontFamily: {
+            display: ['Archivo', 'system-ui', 'sans-serif'],
+            sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+    .eyebrow {
+      font-family: '"IBM Plex Mono"', monospace; font-weight: 600;
+      letter-spacing: 0.26em; text-transform: uppercase; font-size: 0.72rem;
+    }
+    .h-display { font-family: 'Archivo', sans-serif; font-weight: 900; letter-spacing: -0.035em; line-height: 0.94; }
+
+    /* Buttons */
+    .btn { transition: transform .28s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease, background-color .2s ease, border-color .2s ease, color .2s ease; will-change: transform; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0) scale(.985); }
+    .btn-red { background: #D0201B; box-shadow: 0 6px 16px -8px rgba(208,32,27,.55); }
+    .btn-red:hover { background: #A81410; box-shadow: 0 10px 22px -10px rgba(208,32,27,.6); }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 3px solid #D0201B; outline-offset: 3px; border-radius: 4px;
+    }
+
+    /* Card lift */
+    .card { transition: transform .28s cubic-bezier(.34,1.4,.64,1), box-shadow .28s ease, border-color .28s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px -18px rgba(23,18,15,.35); }
+
+    /* Gallery zoom */
+    .shot img { transition: transform .5s cubic-bezier(.22,1,.36,1); }
+    .shot:hover img { transform: scale(1.06); }
+
+    /* Reveal on scroll */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s cubic-bezier(.22,1,.36,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* Marquee */
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .drift { animation: drift 34s linear infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .drift { animation: none; }
+      .btn, .card, .shot img { transition: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-ink font-sans antialiased selection:bg-red selection:text-white">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-line bg-white/90 backdrop-blur-md">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 h-[68px] flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0">
+        <img src="logo.png" alt="Wiśniewski Dachy" class="h-10 w-auto" />
+        <span class="sr-only">Wiśniewski Dachy</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink/70">
+        <a href="#uslugi" class="hover:text-red transition-colors">Usługi</a>
+        <a href="#proces" class="hover:text-red transition-colors">Jak pracuję</a>
+        <a href="#realizacje" class="hover:text-red transition-colors">Realizacje</a>
+        <a href="#opinie" class="hover:text-red transition-colors">Opinie</a>
+        <a href="#kontakt" class="hover:text-red transition-colors">Kontakt</a>
+      </nav>
+
+      <a href="tel:537639206" class="btn btn-red hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="font-mono tracking-tight">537 639 206</span>
+      </a>
+      <a href="tel:537639206" class="btn btn-red sm:hidden inline-flex items-center justify-center rounded-full w-11 h-11 text-white" aria-label="Zadzwoń 537 639 206">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" class="bg-white pt-[68px]">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-16 sm:pt-20 sm:pb-20 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+      <div>
+        <p class="eyebrow text-red flex items-center gap-3">
+          <span class="inline-block w-8 h-0.5 bg-red"></span>
+          Dekarz · Poznań i okolice
+        </p>
+
+        <h1 class="h-display mt-6 text-[13vw] leading-[0.92] sm:text-6xl lg:text-[4.7rem] text-ink">
+          Niezawodne dachy, Poznań i okolice
+        </h1>
+
+        <p class="mt-7 text-lg text-ink/70 leading-relaxed max-w-xl">
+          Hydroizolacja dachów płaskich i papa termozgrzewalna wykonane porządnie, raz a dobrze.
+          <span class="text-ink font-medium">13 lat na dachach Poznania</span>, solidnie, terminowo, na najwyższej jakości materiałach.
+        </p>
+
+        <div class="mt-9 flex flex-wrap items-center gap-4">
+          <a href="tel:537639206" class="btn btn-red inline-flex items-center gap-2.5 rounded-full px-7 py-4 font-bold text-white text-lg">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Zadzwoń: <span class="font-mono">537 639 206</span>
+          </a>
+          <a href="#kontakt" class="btn inline-flex items-center gap-2 rounded-full px-7 py-4 font-bold text-ink border-2 border-line hover:border-red hover:text-red text-lg">
+            Poproś o wycenę
+          </a>
+        </div>
+
+        <!-- trust chips -->
+        <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4 text-sm">
+          <div class="flex items-center gap-2">
+            <span class="flex text-gold" aria-hidden="true">★★★★★</span>
+            <span class="font-mono font-semibold text-ink">5,0</span>
+            <span class="text-muted">· 15 opinii w Google</span>
+          </div>
+          <div class="h-4 w-px bg-line hidden sm:block"></div>
+          <div class="text-ink/70"><span class="font-mono font-semibold text-ink">13 lat</span> doświadczenia</div>
+          <div class="h-4 w-px bg-line hidden sm:block"></div>
+          <div class="text-ink/70">Wycena po wizji lokalnej</div>
+        </div>
+      </div>
+
+      <!-- hero image -->
+      <div class="relative">
+        <div class="overflow-hidden rounded-3xl border border-line">
+          <img src="images/7.jpg" alt="Dach płaski pokryty papą termozgrzewalną z obrobionym kominem" class="w-full h-full object-cover aspect-[4/5]" />
+        </div>
+        <div class="absolute -bottom-4 -left-4 sm:left-6 sm:-bottom-5 bg-white border border-line rounded-2xl px-5 py-4 flex items-center gap-3 shadow-sm">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <div class="leading-tight">
+            <p class="font-display font-800 text-ink text-lg">Bez przecieków</p>
+            <p class="text-xs text-muted">gwarancja solidnej roboty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS STRIP (red band) ===================== -->
+  <section class="bg-red overflow-hidden">
+    <div class="whitespace-nowrap py-3.5 flex" aria-hidden="true">
+      <div class="drift flex shrink-0">
+        <span class="font-display font-800 text-xl px-8 text-white">13 LAT NA DACHACH</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">PAPA TERMOZGRZEWALNA</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">5,0 ★ W GOOGLE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">SZCZELNIE, RAZ A DOBRZE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">DACHY PŁASKIE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">POZNAŃ I OKOLICE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+      </div>
+      <div class="drift flex shrink-0">
+        <span class="font-display font-800 text-xl px-8 text-white">13 LAT NA DACHACH</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">PAPA TERMOZGRZEWALNA</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">5,0 ★ W GOOGLE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">SZCZELNIE, RAZ A DOBRZE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">DACHY PŁASKIE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+        <span class="font-display font-800 text-xl px-8 text-white">POZNAŃ I OKOLICE</span>
+        <span class="font-display font-800 text-xl px-8 text-white/55">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== USŁUGI ===================== -->
+  <section id="uslugi" class="bg-white py-20 sm:py-28">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="eyebrow text-red">Zakres usług</p>
+        <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Wszystko, czym się zajmujemy</h2>
+        <p class="mt-5 text-ink/70 leading-relaxed">
+          Specjalizuję się w hydroizolacji dachów płaskich, ale na dachu ogarniam sprawę od A do Z,
+          od papy i obróbek, po rynny, okna dachowe i docieplenie.
+        </p>
+      </div>
+
+      <!-- featured two -->
+      <div class="mt-12 grid gap-5 lg:grid-cols-2">
+        <article class="card relative overflow-hidden rounded-3xl border border-line bg-white p-8 sm:p-10">
+          <span class="absolute left-0 top-0 h-full w-1.5 bg-red"></span>
+          <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-red/10 text-red">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s4 3.5 4 8a4 4 0 0 1-8 0c0-1.2.4-2.2.9-3-.1 1.3.6 2.2 1.6 2.4C9.6 8 10 5.5 12 2z"/><path d="M8 14a5 5 0 0 0 8 4"/><path d="M7 20h10"/></svg>
+          </span>
+          <span class="ml-3 align-middle eyebrow text-red">Specjalność</span>
+          <h3 class="font-display font-800 text-2xl sm:text-3xl text-ink mt-5">Papa termozgrzewalna i dachy płaskie</h3>
+          <p class="mt-3 text-ink/70 leading-relaxed max-w-md">
+            Kompleksowa hydroizolacja dachów płaskich domów, tarasów, balkonów, garaży, magazynów i altan.
+            Zgrzewy wykonane na najwyższej jakości papie, bez przecieków.
+          </p>
+        </article>
+
+        <article class="card relative overflow-hidden rounded-3xl border border-line bg-white p-8 sm:p-10">
+          <span class="absolute left-0 top-0 h-full w-1.5 bg-red"></span>
+          <span class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-red/10 text-red">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <span class="ml-3 align-middle eyebrow text-red">Ratunek dla dachu</span>
+          <h3 class="font-display font-800 text-2xl sm:text-3xl text-ink mt-5">Naprawa wadliwej hydroizolacji</h3>
+          <p class="mt-3 text-ink/70 leading-relaxed max-w-md">
+            Twój dach przecieka albo poprzednia ekipa spartaczyła robotę? Lokalizuję i usuwam usterki
+            w starych i nowych budynkach, tak, żeby problem nie wrócił.
+          </p>
+        </article>
+      </div>
+
+      <!-- grid of the rest -->
+      <div class="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 15h18"/><path d="M8 9v6M14 9v6M5 9l1-3h12l1 3"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Gont bitumiczny</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Estetyczne i trwałe pokrycie dachu gontem bitumicznym.</p>
+        </article>
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V10l4-3v3l4-3v3l4-3v3l4-3v14"/><path d="M4 21h16"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Obróbki blacharskie</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Mury ogniowe, pasy nadrynnowe i kominy obrobione szczelnie.</p>
+        </article>
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-1.5 6a3 3 0 0 1-3 2.4H7.5a3 3 0 0 1-3-2.4L3 7z"/><path d="M8 16v3M16 16v3"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Rynny i kominki wentylacyjne</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Montaż rynien oraz kominków wentylacyjnych.</p>
+        </article>
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 12h18M8 8v10M14 8v10M11 12v6"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Docieplenie stropodachu</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Ocieplenie stropodachu styropianem, cieplej i taniej.</p>
+        </article>
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 12h16M12 4v16"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Montaż okien dachowych</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Osadzenie okien dachowych z prawidłową obróbką.</p>
+        </article>
+        <article class="card rounded-2xl border border-line bg-white p-6 hover:border-red/40">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c0-2 1.5-3 3-3s3-1 3-3l7-7 3 3-7 7c-2 0-3 1-3 3s-1 3-3 3H3z"/><path d="m14 5 5 5"/></svg>
+          </span>
+          <h3 class="font-display font-700 text-lg text-ink mt-4">Mycie i malowanie</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Kompleksowe mycie dachówki oraz mycie i malowanie elewacji i podbitki.</p>
+        </article>
+      </div>
+
+      <p class="mt-6 text-sm text-muted">
+        Dodatkowo: <span class="text-ink/80 font-medium">wycinka drzew</span> oraz izolacja innych obiektów budowlanych wymagających pokrycia papą termozgrzewalną.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PROCES ===================== -->
+  <section id="proces" class="bg-cloud py-20 sm:py-28 border-y border-line">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="eyebrow text-red">Jak pracuję</p>
+        <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Prosty proces do gotowego dachu</h2>
+      </div>
+
+      <ol class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <li class="reveal rounded-2xl border border-line bg-white p-7">
+          <span class="font-mono text-red text-sm font-semibold">01</span>
+          <h3 class="font-display font-700 text-xl text-ink mt-3">Kontakt</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Dzwonisz albo piszesz. Opowiadasz, co się dzieje z dachem, resztę ustalimy.</p>
+        </li>
+        <li class="reveal rounded-2xl border border-line bg-white p-7">
+          <span class="font-mono text-red text-sm font-semibold">02</span>
+          <h3 class="font-display font-700 text-xl text-ink mt-3">Wizja lokalna</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Przyjeżdżam, oglądam dach na miejscu i doradzam najlepsze rozwiązanie.</p>
+        </li>
+        <li class="reveal rounded-2xl border border-line bg-white p-7">
+          <span class="font-mono text-red text-sm font-semibold">03</span>
+          <h3 class="font-display font-700 text-xl text-ink mt-3">Oferta mailowa</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Dostajesz konkretną, uczciwą wycenę mailem. Bez ukrytych kosztów.</p>
+        </li>
+        <li class="reveal rounded-2xl border border-line bg-white p-7">
+          <span class="font-mono text-red text-sm font-semibold">04</span>
+          <h3 class="font-display font-700 text-xl text-ink mt-3">Realizacja</h3>
+          <p class="mt-2 text-sm text-ink/60 leading-relaxed">Robota wykonana solidnie i na czas, a po zakończeniu porządnie posprzątane.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== REALIZACJE ===================== -->
+  <section id="realizacje" class="bg-white py-20 sm:py-28">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="reveal flex flex-wrap items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <p class="eyebrow text-red">Realizacje</p>
+          <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Dachy, które służą naszym klientom</h2>
+        </div>
+        <a href="#kontakt" class="text-sm font-semibold text-red hover:text-red-deep transition-colors">Chcesz taki dach? Napisz →</a>
+      </div>
+
+      <div class="reveal mt-10 columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/1.jpg" loading="lazy" alt="Dach płaski pokryty papą termozgrzewalną z widokiem na ogród" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Dach płaski, papa termozgrzewalna</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/3.jpg" loading="lazy" alt="Drewniana podbitka okapu dachu" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Podbitka drewniana</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/4.jpg" loading="lazy" alt="Obróbki blacharskie okapu i kalenicy budynku" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Obróbki blacharskie</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/6.jpg" loading="lazy" alt="Papa termozgrzewalna z obróbką komina, dach w lesie" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Papa z obróbką komina</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/2.jpg" loading="lazy" alt="Świeżo wykonana hydroizolacja dachu płaskiego" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Hydroizolacja dachu płaskiego</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/7.jpg" loading="lazy" alt="Dach płaski z obrobionym kominem" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Dach płaski z kominem</figcaption>
+        </figure>
+        <figure class="shot mb-4 break-inside-avoid relative overflow-hidden rounded-2xl border border-line">
+          <img src="images/5.jpg" loading="lazy" alt="Papa termozgrzewalna na dachu płaskim, panorama działki" class="w-full h-auto object-cover" />
+          <figcaption class="absolute bottom-3 left-3 rounded-lg bg-ink/75 px-3 py-1.5 text-xs font-semibold text-white">Papa termozgrzewalna</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== O MNIE ===================== -->
+  <section id="o-mnie" class="bg-cloud py-20 sm:py-28 border-y border-line">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
+      <!-- left: statement -->
+      <div class="reveal">
+        <p class="eyebrow text-red">O mnie</p>
+        <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Paweł Wiśniewski</h2>
+        <p class="mt-3 font-mono text-xs uppercase tracking-[0.2em] text-muted">Dekarz z Poznania · 13 lat na dachach</p>
+
+        <blockquote class="mt-8 pl-6 border-l-2 border-red">
+          <p class="text-xl sm:text-2xl text-ink leading-snug font-medium">
+            „Od lat zajmuję się hydroizolacją dachów płaskich z zastosowaniem pap termozgrzewalnych i nie tylko.
+            Pracuję na najwyższej jakości materiałach, więc gwarantuję solidnie i jakościowo wykonaną pracę."
+          </p>
+        </blockquote>
+        <p class="mt-6 text-ink/70 leading-relaxed max-w-xl">
+          Jestem dekarzem z długoletnim doświadczeniem. Jeśli Twój dach wymaga zabezpieczenia lub naprawy, pomogę.
+        </p>
+
+        <a href="tel:537639206" class="btn btn-red mt-8 inline-flex items-center gap-2.5 rounded-full px-7 py-3.5 font-bold text-white">
+          Porozmawiajmy o Twoim dachu
+        </a>
+      </div>
+
+      <!-- right: credentials panel (no photo needed) -->
+      <div class="reveal">
+        <div class="rounded-3xl border border-line bg-white p-8 sm:p-9">
+          <div class="grid grid-cols-2 gap-x-6 gap-y-8">
+            <div>
+              <p class="font-display font-900 text-4xl sm:text-5xl text-red leading-none">13</p>
+              <p class="text-sm text-muted mt-2">lat doświadczenia</p>
+            </div>
+            <div>
+              <p class="font-display font-900 text-4xl sm:text-5xl text-ink leading-none">5,0<span class="text-gold text-2xl align-super ml-0.5">★</span></p>
+              <p class="text-sm text-muted mt-2">ocena w Google</p>
+            </div>
+            <div>
+              <p class="font-display font-900 text-4xl sm:text-5xl text-ink leading-none">15/15</p>
+              <p class="text-sm text-muted mt-2">opinii na 5 gwiazdek</p>
+            </div>
+            <div>
+              <p class="font-display font-900 text-4xl sm:text-5xl text-red leading-none">100%</p>
+              <p class="text-sm text-muted mt-2">materiały najwyższej jakości</p>
+            </div>
+          </div>
+
+          <hr class="my-7 border-line" />
+
+          <ul class="space-y-3.5 text-sm text-ink/80">
+            <li class="flex items-center gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-red/10 text-red shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+              </span>
+              Wycena po wizji lokalnej
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-red/10 text-red shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+              </span>
+              Praca solidnie i terminowo
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="grid place-items-center w-6 h-6 rounded-full bg-red/10 text-red shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+              </span>
+              Po zakończeniu porządnie posprzątane
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPINIE ===================== -->
+  <section id="opinie" class="bg-white py-20 sm:py-28">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="reveal flex flex-wrap items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <p class="eyebrow text-red">Opinie klientów</p>
+          <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Klienci mówią jasno: polecam</h2>
+        </div>
+        <div class="flex items-center gap-4 rounded-2xl border border-line bg-cloud px-5 py-4">
+          <span class="font-display font-900 text-4xl text-ink">5,0</span>
+          <div class="text-sm">
+            <span class="text-gold tracking-tight" aria-hidden="true">★★★★★</span>
+            <p class="text-muted">15 opinii w Google</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
+        <!-- 1 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">R</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Romuald Hylla</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 2 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Polecam, bardzo dobry kontakt, szybko i fachowo a po zakończonej pracy pięknie posprzątane. 👍</blockquote>
+        </figure>
+        <!-- 2 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">P</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Paulina Szymańska</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Z czystym sumieniem polecam Pana Pawła, naprawdę kawał solidnej roboty!</blockquote>
+        </figure>
+        <!-- 3 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">J</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Juliett TattooInk</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 2 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Chyba nie ma lepszego fachowca w tej dziedzinie niż Pan Paweł! Profesjonalizm na najwyższym poziomie, super kontakt, Pan Paweł na spokojnie wszystko doradzi ;) A do tego bardzo sympatyczny, polecam z całego serca!</blockquote>
+        </figure>
+        <!-- 4 (highlight) -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border-2 border-red/25 bg-white p-6">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">E</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Ewa Grochowicz</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 2 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/80 leading-relaxed text-[0.95rem]">Papa termozgrzewalna na dachu mojego domku na działce (ponad 40 m²) z obrobieniem komina, położona przez pana Pawła szybko, sprawnie, po prostu profesjonalnie. Polecę Go znajomym.</blockquote>
+        </figure>
+        <!-- 5 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">Z</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Zara Lorenc</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Pan Paweł to prawdziwy fachowiec. Profesjonalista w swoim fachu, bardzo solidne wykonanie pracy z zachowaniem sztuki dekarskiej. Jest osobą bardzo kontaktową, zaangażowaną. Jestem bardzo zadowolona z usługi. Polecam serdecznie.</blockquote>
+        </figure>
+        <!-- 6 (highlight) -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border-2 border-red/25 bg-white p-6">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">k</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">kamil Szymański</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/80 leading-relaxed text-[0.95rem]">Szybka wycena, konkretna realizacja i indywidualne podejście. Polecam Pana Pawła! Dzięki jego pomocy w końcu dach nie przecieka.</blockquote>
+        </figure>
+        <!-- 7 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">Ł</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Łukasz Kk</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 2 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Profesjonalność i zaangażowanie Pana Pawła 100%. Szybka i fachowa pomoc. Dziękuję i naprawdę polecam.</blockquote>
+        </figure>
+        <!-- 8 (highlight) -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border-2 border-red/25 bg-white p-6">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">A</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Anna Msz</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/80 leading-relaxed text-[0.95rem]">Jako osoba mająca doświadczenie w branży budowlanej mogę śmiało stwierdzić, że prace dekarskie wykonane przez pana Pawła stoją na bardzo wysokim poziomie.</blockquote>
+        </figure>
+        <!-- 9 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">E</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Ewelina Marchewka</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Z pełnym przekonaniem polecam firmę dekarską, która realizowała prace na moim dachu. Zlecenie zostało wykonane bardzo solidnie, terminowo i z dużą starannością.</blockquote>
+        </figure>
+        <!-- 10 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">J</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Jeremi Wozniak</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Polecam w 100%. Fachowe doradztwo, obsługa od A do Z, wszystko robione na czas zgodnie z ustaleniami.</blockquote>
+        </figure>
+        <!-- 11 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">P</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Piotr Wiśniewski</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Bardzo polecam, solidna firma. Szybka wycena i sprawna praca.</blockquote>
+        </figure>
+        <!-- 12 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">R</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Ryszard Skrzypczak</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 2 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Bardzo polecam, ponadprzeciętnie solidnie, szybko, dokładnie, cena do akceptacji.</blockquote>
+        </figure>
+        <!-- 13 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">J</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Jerzy Urban</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Profesjonalizm na najwyższym poziomie.</blockquote>
+        </figure>
+        <!-- 14 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-ink text-white font-bold">K</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Kacper Matuszczak</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Świetny fachowiec, polecam!</blockquote>
+        </figure>
+        <!-- 15 -->
+        <figure class="reveal card mb-5 break-inside-avoid rounded-2xl border border-line bg-white p-6 hover:border-red/30">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-red text-white font-bold">W</span>
+            <div class="min-w-0">
+              <figcaption class="font-semibold text-ink truncate">Wojt Kos</figcaption>
+              <p class="text-xs text-muted">Opinia z <span class="text-red font-medium">Google</span> · 3 mies.</p>
+            </div>
+          </div>
+          <div class="mt-3 text-gold text-sm" aria-label="Ocena 5 na 5">★★★★★</div>
+          <blockquote class="mt-3 text-ink/75 leading-relaxed text-[0.95rem]">Polecam.</blockquote>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section id="kontakt" class="bg-cloud py-20 sm:py-28 border-t border-line">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="eyebrow text-red">Kontakt</p>
+        <h2 class="h-display mt-4 text-4xl sm:text-5xl text-ink">Zadzwoń, razem ustalimy szczegóły</h2>
+        <p class="mt-5 text-ink/70 leading-relaxed max-w-xl">
+          Koszt ustalam indywidualnie, po obejrzeniu dachu wysyłam konkretną ofertę.
+          Najszybciej złapiesz mnie telefonicznie.
+        </p>
+      </div>
+
+      <div class="reveal mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="tel:537639206" class="card group rounded-2xl border border-line bg-white p-6 hover:border-red/50">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <p class="text-xs text-muted mt-3">Telefon</p>
+          <p class="font-mono text-lg font-semibold text-ink group-hover:text-red transition-colors">537 639 206</p>
+        </a>
+        <div class="rounded-2xl border border-line bg-white p-6">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <p class="text-xs text-muted mt-3">Adres</p>
+          <p class="text-sm font-medium text-ink leading-snug">Poznańska 28/30<br/>60-851 Poznań</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-white p-6">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <p class="text-xs text-muted mt-3">Godziny</p>
+          <p class="text-sm font-medium text-ink leading-snug">Pon–Pt: 7:00–20:00<br/>Sob: 8:00–14:00<br/>Niedz.: nieczynne</p>
+        </div>
+        <div class="rounded-2xl border border-line bg-white p-6">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-red/10 text-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <p class="text-xs text-muted mt-3">Teren działania</p>
+          <p class="text-sm font-medium text-ink leading-snug">Poznań i okolice</p>
+        </div>
+      </div>
+
+      <div class="reveal mt-8 flex flex-wrap items-center gap-5">
+        <a href="tel:537639206" class="btn btn-red inline-flex items-center gap-2.5 rounded-full px-7 py-4 font-bold text-white text-lg">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Zadzwoń: <span class="font-mono">537 639 206</span>
+        </a>
+        <p class="text-sm text-muted">Oddzwonię i omówimy szczegóły.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-white border-t border-line py-12">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-8">
+        <div class="flex items-center gap-4">
+          <img src="logo.png" alt="Wiśniewski Dachy" class="h-11 w-auto" />
+          <div class="text-sm text-muted">
+            <p class="text-ink font-semibold">Wiśniewski Dachy</p>
+            <p>Dekarz · Poznań i okolice</p>
+          </div>
+        </div>
+        <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
+          <a href="#uslugi" class="hover:text-red transition-colors">Usługi</a>
+          <a href="#proces" class="hover:text-red transition-colors">Jak pracuję</a>
+          <a href="#realizacje" class="hover:text-red transition-colors">Realizacje</a>
+          <a href="#opinie" class="hover:text-red transition-colors">Opinie</a>
+          <a href="#kontakt" class="hover:text-red transition-colors">Kontakt</a>
+        </nav>
+        <a href="tel:537639206" class="font-mono text-lg font-semibold text-ink hover:text-red transition-colors">537 639 206</a>
+      </div>
+      <div class="mt-10 pt-6 border-t border-line flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted">
+        <p>© 2026 Wiśniewski Dachy · Paweł Wiśniewski · Poznańska 28/30, 60-851 Poznań</p>
+        <p>Solidnie. Terminowo. Bez przecieków.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
